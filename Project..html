@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Projects</title>
+    <link rel="icon" href="project-management-icon-png-favpng-prmsecJ01CwLCC5Sp7cKvWfDB.jpg">
+   <style>
+    *{
+        background-image: url(illustration-artificial-intelligence-landing-page-website-template-for-ai-machine-deep-learning-technology-sci-fi-concept-vector.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        color:black;
+    }
+   </style>
+
+</head>
+<body >
+    <center><h1 style="font-style: oblique;"><font >INTELLIGENT ACCIDENT LOCATION TRACKING & <br> NOTIFICATION SYSTEM</font></h1></center>
+    <h1>INTRODUCTION :</h1>
+    <Ul>
+        <Li style="font-size: 20px;">The prevent accidents, it is not in our hand always, but it is possible to save victims.
+            under such circumstances a vechicle collision system is helpful. </Li>
+        <li style="font-size: 20px;">The android application sends an alert message to the near by control station about the accident.</li>
+        <li style="font-size: 20px;">As such, efficient automatic accident detection wit an automatic notification to the emergency serive with the accident location is a 
+            prime need to save the precious human life.
+        </li>
+     </Ul>
+     <h1>Description :</h1>
+           <p style="font-size: 20px;"> <i>Advancement in transportation system has boosted speed of our lives. Meantime, road traffic accident 
+            is a major global health issue resulting 
+        hugs of lives, propertiesand valuable time. <br> <mark> Global positioning system (GPS)</mark> devices finds the exact location of accident.
+        <mark> Global System for Mobile(GSM) </mark>modules sends a notification message including the 
+    link of location in google <br> map to the nearest policle controls room and hospital so that they can visit the link,
+     find out the shortest route of the accident spot and take initiatives to speed up the rescue process. </p>
+     <h2>SOFTWARE AND HARDWARE REQUIREMENTS</i></h2>
+     <h3><u>HARDWARE</u>:</h3>
+     <ul>
+     <li>Arduino Nano</li>
+     <li>GPS Module</li>
+     <li>GSM Module</li>
+     <li>LCD</li>
+     <li>Vibration Sensor</li>
+    </ul>
+     <h3><u>SOFTWARE</u>:</h3>
+     <ul>
+     <li style="font-size: 20px;"><b>operating System:</b> Windows10 64 bits</li>
+     <li style="font-size: 20px;"><b>Programming Language:</b> Python</li>
+     <li style="font-size: 20px;"><b>Platform Used:</b> Anaconda Navigator</li>
+    </ul>
+    <h1 style="font-size: 30px; font-family: cursive;"><center><u>SOURCE CODE</u></center></h1>
+    <pre style="font-size: 20px;">
+        ## Defining Cnn
+  MyCnn = tf.keras.models.Sequential([
+  layers.BatchNormalization(),
+  layers.Conv2D(32, 3, activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(64, 3, activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Conv2D(128, 3, activation='relu'),
+  layers.MaxPooling2D(),
+  layers.Flatten(),
+  layers.Dense(256, activation='relu'),
+  layers.Dense(len(class_names), activation= 'softmax')
+  ])
+  MyCnn.compile(optimizer='adam',loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+  ## lets train our CNN
+retVal = MyCnn.fit(training_ds, validation_data= validation_ds, epochs = 10)
+Epoch 1/10
+8/8 [==============================] - 63s 8s/step - loss: 4.6825 - accuracy: 0.4956 - val_loss: 1.4613 - val_accuracy: 0.5306
+Epoch 2/10
+8/8 [==============================] - 62s 8s/step - loss: 0.6568 - accuracy: 0.6056 - val_loss: 0.6621 - val_accuracy: 0.5408
+Epoch 3/10
+8/8 [==============================] - 63s 8s/step - loss: 0.5819 - accuracy: 0.7016 - val_loss: 0.9011 - val_accuracy: 0.5102
+Epoch 4/10
+8/8 [==============================] - 63s 8s/step - loss: 0.4905 - accuracy: 0.7775 - val_loss: 0.5707 - val_accuracy: 0.7551
+Epoch 5/10
+8/8 [==============================] - 62s 8s/step - loss: 0.3829 - accuracy: 0.8331 - val_loss: 0.5324 - val_accuracy: 0.6939
+Epoch 6/10
+8/8 [==============================] - 62s 8s/step - loss: 0.2723 - accuracy: 0.8925 - val_loss: 0.4146 - val_accuracy: 0.7857
+Epoch 7/10
+8/8 [==============================] - 62s 8s/step - loss: 0.1972 - accuracy: 0.9254 - val_loss: 0.5336 - val_accuracy: 0.7653
+Epoch 8/10
+8/8 [==============================] - 63s 8s/step - loss: 0.1452 - accuracy: 0.9494 - val_loss: 0.5103 - val_accuracy: 0.7653
+Epoch 9/10
+8/8 [==============================] - 63s 8s/step - loss: 0.0928 - accuracy: 0.9747 - val_loss: 0.3138 - val_accuracy: 0.8469
+Epoch 10/10
+8/8 [==============================] - 63s 8s/step - loss: 0.0712 - accuracy: 0.9722 - val_loss: 0.3853 - val_accuracy: 0.8469
+</pre><br>
+<h1>OUTPUT SCREENS</h1>
+<h3><u></u> Traning Data And Accuracy</u></h3>
+<img src="__results___8_1.png" height="400px" width="400px" alt="">
+<h1>Validation Data and Accuracy</h1>
+<img src="__results___9_1.png" height="400px" width="400px" alt="">
+<h1>Predicting Accident and Non Accidents</h1>
+<img src="__results___10_0.png" height="600px" width="600px" alt="">
+
+    
+</body>
+</html>
